@@ -1,0 +1,122 @@
+* {
+  font-family: "poppins";
+  overflow: hidden;
+}
+
+body {
+  padding: 50px 20px;
+  color: rgb(201, 226, 225);
+  background-color: rgb(1, 27, 40);
+}
+.navSection {
+  display: flex;
+  font-size: x-large;
+  font-weight: bold;
+  padding: 0 20px 25px;
+  text-align: center;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+.navSection div:first-child {
+  width: 175px;
+  padding-right: 370px;
+}
+.navSection div:nth-child(2) {
+  padding-right: 100px;
+}
+.navSection div:nth-child(3),
+navSection span:last-child {
+  padding: 0 40px;
+}
+.questionSection {
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: left;
+  padding: 14% 15px;
+  border-style: solid;
+  border-color: rgb(3, 49, 76);
+  border-radius: 10px;
+  height: 50vh;
+}
+.ansSection {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+}
+.ansSection div {
+  overflow: hidden;
+  padding: 15px 0;
+  border-style: solid;
+  border-color: rgb(3, 49, 76);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.ansSection div:hover {
+  color: rgb(32, 32, 32);
+  background-color: aquamarine !important;
+}
+.ansSection div:nth-of-type(odd) {
+  margin-right: 12px;
+}
+.ansSection div:nth-child(1),
+.ansSection div:nth-child(2) {
+  margin-bottom: 12px;
+}
+
+.next:hover,
+.restart:hover {
+  cursor: pointer;
+  color: aquamarine;
+}
+
+.points {
+  height: 70vh;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+  border: solid rgb(3, 49, 76);
+  border-radius: 15px;
+  color: rgb(201, 226, 225);
+  padding: 5px 0px;
+  list-style-type: none;
+  font-weight: bold;
+}
+
+.solve {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 35px;
+}
+.solve h5 {
+  color: rgb(201, 226, 225);
+  border: rgb(3, 49, 76) solid;
+  padding: 18px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.solve h5:hover {
+  color: rgb(32, 32, 32);
+  background-color: aquamarine;
+}
+
+@media screen and (max-width: 992px) {
+  .navSection div:first-child,
+  .navSection div:last-child,
+  .navSection div:nth-child(2),
+  .navSection div:nth-child(3) {
+    font-size: x-large;
+    padding: 0 18px 0 0;
+  }
+  .col-lg-3 {
+    display: none;
+  }
+}
