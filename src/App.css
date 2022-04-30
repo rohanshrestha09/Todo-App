@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.insider {
+  height: auto;
+  width: 320px;
+  color: whitesmoke;
+  background-color: rgb(53, 80, 160);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.form {
+  flex-direction: column;
+}
+
+.form input {
+  height: 40px;
+  margin: 8px 0;
+  background-color: rgb(5, 25, 84);
+  border-radius: 15px;
+  padding: 0 10px;
+  color: whitesmoke;
+  border-style: none;
+  font-weight: bold;
+}
+
+.form input:last-child:hover {
+  cursor: pointer;
+  background-color: aquamarine;
+  transition: 0.2s;
+  color: black;
+}
+
+.lists ul {
+  background-color: rgb(5, 25, 84);
+  list-style-type: none;
+  margin: 15px 0;
+  padding: 8px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.AddTask {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.AddTask h3 {
+  border-style: hidden;
+  background-color: #4caf50;
+  padding: 4px 9px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.AddTask h3:hover {
+  background-color: aquamarine;
+  color: black;
+}
+
+.icon {
+  padding: 13px 12px 0 0;
+  float: right;
+  cursor: pointer;
+}
+
+.taskCompletion {
+  text-decoration: line-through;
+}
